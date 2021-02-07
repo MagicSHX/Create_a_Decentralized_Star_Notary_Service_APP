@@ -1,0 +1,23 @@
+{
+  "name": "create_a_decentralized_star_notary_service_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicSHX/Create_a_Decentralized_Star_Notary_Service_APP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagicSHX/Create_a_Decentralized_Star_Notary_Service_APP/issues"
+  },
+  "homepage": "https://github.com/MagicSHX/Create_a_Decentralized_Star_Notary_Service_APP#readme",
+  "dependencies": {
+    "ethereumjs-tx": "^2.1.2",
+    "web3": "^1.3.4"
+  }
+}
