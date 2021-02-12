@@ -1,4 +1,4 @@
-const StarNotary = artifacts.require("StarNotary"); // Name of the StarNotary contract file
+const StarNotary = artifacts.require("StarNotary");
 
 module.exports = function(deployer) {
   deployer.deploy(StarNotary);
