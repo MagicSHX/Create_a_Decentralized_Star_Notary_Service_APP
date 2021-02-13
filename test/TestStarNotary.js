@@ -77,6 +77,10 @@ it('lets user2 buy a star and decreases its balance in ether', async() => {
 
 it('can add the star name and star symbol properly', async() => {
     // 1. create a Star with different tokenId
+    let tokenId = 2;
+    let instance = await StarNotary.deployed();
+    await instance.createStar('Awesome Star 2!', tokenId, {from: accounts[0]});
+    console.log(await instance.tokenIdToStarInfo.call(tokenId));
     //2. Call the name and symbol properties in your Smart Contract and compare with the name and symbol provided
 });
 
