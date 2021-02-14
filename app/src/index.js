@@ -1,5 +1,8 @@
 import Web3 from "web3";
 import starNotaryArtifact from "../../build/contracts/StarNotary.json";
+//const StarNotary = artifacts.require("StarNotary");
+//import { default as contract } from 'truffle-contract';
+
 
 const App = {
   web3: null,
@@ -41,7 +44,11 @@ const App = {
 
   // Implement Task 4 Modify the front end of the DAPP
   lookUp: async function (){
-    
+    const { lookUptokenIdToStarInfo } = this.meta.methods;
+    const lookup_id = parseInt(document.getElementById("lookid").value);
+    const Star_name = await lookUptokenIdToStarInfo(lookup_id).call();
+    console.log(Star_name);
+    App.setStatus("Lookup Star is " + Star_name + ".");
   }
 
 };
